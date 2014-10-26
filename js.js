@@ -60,9 +60,13 @@ var welcomeSection = $('#welcomeContainer');
 			$('a[data-target="work"]').css('color', 'rgb(52, 52, 52)');
 		}
 		if (inView(contactSection)) {
-			$('a[data-target="contact"]').css('color', 'rgb(59, 148, 136)');
+			$('a[data-target="contact"]').css('color', 'rgb(223, 131, 142)');
+			$('#headerLeft').css('background', 'url("spectral_graph_light.gif")');
+			$('#headerRightTop').css({'background': 'rgb(59, 148, 136)', 'border-bottom': '5px solid rgb(245,245,0)'});
 		} else {
 			$('a[data-target="contact"]').css('color', 'rgb(52, 52, 52)');
+			$('#headerLeft').css('background', 'url("spectral_graph.gif")');
+			$('#headerRightTop').css({'background': 'rgb(223, 131, 142)', 'border-bottom': '5px solid rgb(0,0,0)'});
 		}
 	});
 
