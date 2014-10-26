@@ -28,7 +28,7 @@ function inView(element) {
 	var elTop = element.offset().top;
 	var elBottom = element.height();
 
-	return ((elBottom < windowTop) && (elTop < windowTop));
+	return ((elBottom > windowTop - elTop) && (elTop < windowTop));
 }
 
 var aboutSection = $('#aboutContainer');
