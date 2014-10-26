@@ -20,15 +20,15 @@ $('a[href^="#"]').on('click', function(event) {
 });
 
 function inView(element) {
-	var windowTop = $(window).scrollTop();
+	var headerHeight = $('header').height() + 20;
+
+	var windowTop = $(window).scrollTop() + headerHeight;
 	var windowBottom = $(window).height();
 
-	var headerHeight = $('header').height() + 80;
-
 	var elTop = element.offset().top;
-	var elBottom = elTop + element.height();
+	var elBottom = element.height();
 
-	return ((elBottom < windowBottom) && ((elTop + headerHeight) > windowTop));
+	return ((elBottom < windowTop) && (elTop < windowTop));
 }
 
 var aboutSection = $('#aboutContainer');
@@ -38,15 +38,15 @@ var headerSection = $('header');
 var welcomeSection = $('#welcomeContainer');
 	
 	$(window).scroll(function() {
-		console.log($(aboutSection).height());
-		console.log($(workSection).height());
-		console.log($(contactSection).height());
 		var theta = $(this).scrollTop();
 		if (theta < 182) {
 			$('#spinner').css({ width: theta, height: theta});
 		}
-		/* NEXT: USE SWITCH CASE INSTEAD & FIGURE OUT WHY ABOUT AND CONTACT ARE ON WHEN AT TOP OF SCREEN! */
-		if (!inView(welcomeSection)) {
+		/* NEXT: FIGURE OUT WHY ABOUT AND CONTACT ARE ON WHEN AT TOP OF SCREEN! */
+		if (theta < welcomeSection.height()) {
+			$('#logo').hide();
+		} else {
+			$('#logo').show();
 			$('#logo').animate({opacity: .2});
 		} 
 		if (inView(aboutSection)) {
