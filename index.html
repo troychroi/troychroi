@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>Troy Chroi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header>
+<ul id="headerList">
+	<li id="headerLeft"></li>
+	<li id="headerRight">
+		<ul id="headerRightList">
+			<li>
+				<ul id="headerRightTop">
+					<li id="headerRightTopTitle"><span class="topDistort">Troy Chroi</span>
+						<span class="yellowTitle">Troy Chroi</span>
+						<span class="greenTitle">Troy Chroi</span>
+						<span class="blueTitle">Troy Chroi</span>
+					</li>
+					<li id="headerRightTopDesc"><span class="topDistort">Front-End Developer</span>
+						<span class="yellowDesc">Front-End Developer</span>
+						<span class="greenDesc">Front-End Developer</span>
+						<span class="blueDesc">Front-End Developer</span>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<nav>
+					<ul id="headerRightBottom">
+						<li id="logo"></li>
+						<li><a href="#about" data-target="about" class="nav">ABOUT</a></li>
+						<li><a href="#work" data-target="work" class="nav">WORK</a></li>
+						<li><a href="#contact" data-target="contact" class="nav">CONTACT</a></li>
+					</ul>
+				</nav>
+			</li>
+		</ul>	
+	</li>
+</ul>
+</header>
+
+<main>
+	<div id="welcomeContainer">
+		WELCOME TO MY SITE!<br>
+		<span class="italic">ENJOY YOUR STAY.</span><br>
+		<img src="feedback_loop.png" id="spinner">
+	</div>
+	<a href="#" id="about" class="navLocation"></a>
+	<div id="aboutContainer">
+	<ul id="aboutList">
+		<li id="aboutLeft">
+		<p>When I take on a project, I treat as collaboration. First step is to meet by analog or digital means to get some ideas going.</p>
+		<br>
+		<p>I'll ask about your requirements, goals and inspiration. We'll throw ideas around and inspire each other.</p>
+		<br>
+		<p>Next I'll create a visual mockup to begin bringing these ideas to life. If it's what you have in mind, I'll architect the site. I like to build themes for Wordpress and Tumblr, as they make it easy to manage content.</p>
+		<br>
+		<p>In the end, you'll have a website that amplifies your voice and engages your audience.</p>
+		</li>
+		<li id="aboutRight">
+		"Every thought you produce, anything you say, any action you do, it bears your signature." - Thich Nhat Hanh
+		</li>
+	</ul>
+	</div>
+	<a href="#" id="work" class="navLocation"></a>
+	<ul id="workList">
+		<li id="pearl" onclick="window.open('http://pearlalyon.com','_blank')">
+			<p class="overlay">Pearl<br>
+			<span class="italic">Music Artist</span></p>
+		</li>
+		<li id="lynsea" onclick="window.open('http://lynsearohde.com','_blank')">
+			<p class="overlay">Lynsea Rohde<br>
+			<span class="italic">Music Artist</span></p>
+		</li>
+		<li id="stella" onclick="window.open('http://troychroi.github.io/stars-quiz-app/','_blank')">
+			<p class="overlay">Stella Bella<br>
+			<span class="italic">Quiz Application</span></p>
+		</li>
+		<li id="unstump" onclick="window.open('http://troychroi.github.io/api-hack/', '_blank')">
+			<p class="overlay">UNTUMP<br>
+			<span class="italic">API Hack</span></p>
+		</li>
+	</ul>
+	<a href="#" id="contact"></a>
+	<div id="contactContainer">
+		<a href="mailto:troychroi@gmail.com?subject=Web Work">troychroi@gmail.com</a><br>
+		<img src="github_40.png" onclick="window.open('http://github.com/troychroi', '_blank')" style="cursor: pointer;">
+	</div>
+</main>
+
+</body>
+</html>

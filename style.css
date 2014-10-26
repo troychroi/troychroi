@@ -1,0 +1,296 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+ul li {
+	list-style: none;
+}
+
+a {
+	color: rgb(52, 52, 52);
+	text-decoration: none;
+}
+
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: rgb(52, 52, 52);
+	background: rgb(239, 239, 239);
+	min-width: 600px;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 238px;
+	border-bottom: 10px solid rgb(0,0,0);
+	z-index: 1;
+	min-width: 600px;
+	background: rgb(0,0,0);
+}
+
+#headerLeft {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 238px;
+	background-image:  url('spectral_graph.gif');
+	background-position: right;
+}
+
+#headerRight {
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 238px;
+}
+
+#headerRightTop {
+	height: 94px;
+	padding: 10px;
+	background: rgb(223, 131, 142);
+	border-bottom: 5px solid rgb(0,0,0);
+	z-index: -2;
+	position: relative;
+}
+
+#headerRightTopTitle {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#headerRightTopDesc {
+	font-size: 30px;
+	position: relative;
+	top: 10px;
+}
+
+#headerRightBottom {
+	font-size: 25px;
+	font-family: "Helvetica Neue", Helvetica,  sans-serif;
+	font-weight: 400;
+	height: 99px;
+	padding: 10px;
+	background: rgb(239, 239, 239);
+}
+
+#headerRightBottom li {
+	margin-top: 5px;
+}
+
+#logo {
+	position: relative;
+	float: right;
+	right: 25%;
+	background: url('feedback_loop_cut.png');
+	height: 82px;
+	width: 82px;
+	opacity: 0;
+}
+
+main {
+	position: relative;
+	top: 248px;
+	max-width: 960px;
+	margin: 0 auto;
+	border-left: 2px solid rgb(0,0,0);
+	border-right: 2px solid rgb(0,0,0);
+	min-width: 700px;
+	padding-bottom: 80px;
+	background: rgb(255,255,255);
+}
+
+#welcomeContainer {
+	font-size: 50px;
+	font-weight: 600;
+	text-align: center;
+	height: 440px;
+	padding-top: 200px;
+}
+
+#spinner {
+	width: 32px;
+	height: 32px;
+	position: relative;
+	opacity: .5;
+	top: 60px;
+}
+
+#aboutContainer {
+	background: url('face.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-y: hidden;
+	border-top: 2px solid rgb(0,0,0);
+}
+
+#aboutList {
+	position: relative;
+	width: 100%;
+	background-color: rgba(255,255,255,.7);
+	font-family: "Helvetica Neue", Helvetica,  sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: left;
+	overflow-y: hidden;
+	padding-bottom: 60px;
+}
+
+
+#aboutLeft {
+	width: 45%;
+	float: left; 
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-top: 20px;
+}
+
+#aboutRight {
+	width: 45%;
+	float: left;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-top: 20%;
+	font-style: italic;
+	color: rgb(170, 45, 62);
+}
+
+#workList {
+	position: relative;
+	width: 100%;
+	min-width: 920px;
+	overflow-y: hidden;
+	border-top: 2px solid rgb(0,0,0);
+	padding-bottom: 60px;
+}
+
+#workList li {
+	width: 400px;
+	height: 218px;
+	font-size: 25px;
+	position: relative;
+	margin-top: 40px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+}
+
+#workList li:nth-child(odd) {
+	float: left;
+	margin-left: 40px;
+	margin-right: 10px;
+}
+
+#workList li:nth-child(even) {
+	float: right;
+	margin-right: 40px;
+	margin-left: 20px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.overlay {
+	background: rgba(235,235,0,.9);
+	width: 400px;
+	height: 109px;
+	text-align: center;
+	padding-top: 109px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#pearl {
+	background: url('pearl.png');
+	width: 400px;
+	height: 218px;
+}
+
+#lynsea {
+	background: url('lynsea.png');
+	width: 400px;
+	height: 218px;
+}
+
+#stella {
+	background: url('stella.png');
+	width: 400px;
+	height: 218px;
+}
+
+#unstump {
+	background: url('unstump.png');
+	width: 400px;
+	height: 218px;
+}
+
+#contactContainer {
+	text-align: center;
+	font-size: 40px;
+	height: 340px;
+	padding-top: 200px;
+	line-height: 60px;
+	border-top: 2px solid rgb(0,0,0);
+}
+
+/* ---------- DISTORTED ----------- */
+
+::selection {
+	background-color: rgb(159, 248, 236);
+}
+
+.yellowTitle {
+	position: absolute;
+	color: rgba(0,255,0,.1);
+	top: 9px;
+	left: 10px;
+	z-index: -1;
+}
+
+.greenTitle {
+	position: absolute;
+	color: rgba(0,255,0,.1);
+	top: 9px;
+	left: 9px;
+	z-index: -1;
+}
+
+
+.blueTitle {
+	position: absolute;
+	color: rgba(0,0,255,.1);
+	top: 10px;
+	left: 9px;
+	z-index: -1;
+}
+
+.topDistort {
+	color: rgb(52, 52, 52);
+	z-index: 1;
+}
+
+.yellowDesc {
+	position: absolute;
+	color: rgba(0,255,0,.1);
+	top: -1px;
+	left: 1px;
+	z-index: -1;
+}
+
+.greenDesc {
+	position: absolute;
+	color: rgba(0,255,0,.1);
+	top: -1px;
+	left: -1px;
+	z-index: -1;
+}
+
+
+.blueDesc {
+	position: absolute;
+	color: rgba(0,0,255,.1);
+	top: 1px;
+	left: -1px;
+	z-index: -1;
+}
+
+
