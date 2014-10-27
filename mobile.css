@@ -68,6 +68,8 @@ header {
 #headerRightBottom li {
 	margin-top: 5px;
 	text-align: right;
+	position: relative;
+	float: left;
 }
 
 #logo {
