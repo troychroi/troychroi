@@ -67,10 +67,7 @@ header {
 
 #headerRightBottom li {
 	margin-top: 5px;
-	text-align: center;
-	position: relative;
-	float: left;
-	height: 40px;
+	text-align: right;
 }
 
 #logo {
@@ -260,5 +257,4 @@ main {
 	left: -1px;
 	z-index: -1;
 }
-
 
