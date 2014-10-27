@@ -54,7 +54,7 @@ header {
 #headerRightTopDesc {
 	font-size: 15px;
 	position: relative;
-	top: 10px;
+	top: 5px;
 }
 
 #headerRightBottom {
@@ -67,6 +67,7 @@ header {
 
 #headerRightBottom li {
 	margin-top: 5px;
+	text-align: right;
 }
 
 #logo {
