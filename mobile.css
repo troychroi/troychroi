@@ -67,9 +67,10 @@ header {
 
 #headerRightBottom li {
 	margin-top: 5px;
-	text-align: right;
+	text-align: center;
 	position: relative;
 	float: left;
+	height: 40px;
 }
 
 #logo {
