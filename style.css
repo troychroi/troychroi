@@ -82,6 +82,7 @@ header {
 	float: right;
 	right: 25%;
 	background: url('logo.png');
+	background-size: 82px;
 	height: 82px;
 	width: 82px;
 	opacity: 0;
